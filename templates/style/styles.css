@@ -1,0 +1,29 @@
+
+.warning {
+
+  position: absolute;
+  top: 80%;
+  left: 70%;
+  transform: translate(-40%, -40%);
+
+}
+
+.upload {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -40%);
+
+}
+
+container {
+  display: flex; /* 使用 Flexbox 來排列子元素 */
+  justify-content: space-between; /* 子元素之間的間距 */
+}
+
+.element1, .element2 {
+  width: 45%; /* 設定子元素的寬度 */
+  padding: 10px; /* 設定內邊距 */
+  
+}

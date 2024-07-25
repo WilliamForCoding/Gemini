@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style/styles.css" />
+    <title>Gemini專案</title>
+</head>
+<body>
+
+<h3>辨認照片內容: {{ gemini_img_ans }}</h3> 
+
+<div class="upload">
+  <h2>上傳照片</h2>
+
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="photo" accept="image/*" onchange="loadFile(event)" >
+    <img id="output"/>
+    <script>
+    var loadFile = function(event) {
+      var reader = new FileReader();
+      reader.onload = function(){
+        var output = document.getElementById('output');
+        output.src = reader.result;
+      };
+      reader.readAsDataURL(event.target.files[0]);
+    };
+  </script>
+    <input type="submit" value="Upload">
+  </form>
+  
+  
+</div>
+
+
+</body>
+</html>

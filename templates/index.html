@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style/styles.css" />
+    <title>Gemini專案</title>
+  </head>
+  <body>
+
+
+
+    <h1>Gemini 回應內容:</h1>
+  
+  
+  
+    <h3>{{ gemini_ans }}</h3>
+    
+    <div class="warning">
+      <h1><label for="name">給予使用者輸入的地方，讓使用者跟gemini互動:</label></h1>
+
+    
+    <form method="POST">
+    <div class="container">
+      <div class="element1"><input type="text" id="name" name="gemini_get" required minlength="1" maxlength="9000" size="80" /></div>
+      <div class="element2"><button type="submit" name="button">Click Me!</button></div>
+    </div>
+	  
+    </form>
+
+    
+
+    </div>
+    
+    
+  
+  
+  </body>
+</html>
